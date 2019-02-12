@@ -1,0 +1,30 @@
+testinfo:
+    - id: mine_004
+      title: 我的海豚币
+      desc: 支付宝购买
+testcases:
+    - element_info: com.dolphin.insuranceAgent:id/ll_my
+      find_type: id
+      action_type: click
+      desc: 点击我的
+    - element_info: com.dolphin.insuranceAgent:id/item_currency
+      find_type: id
+      action_type: click
+      desc: 点击进入我的海豚币
+    - element_info: com.dolphin.insuranceAgent:id/tv_buy
+      find_type: ids
+      index: 1
+      action_type: click
+      desc: 点击第二个购买
+    - element_info: android.widget.TextView
+      find_type: class_names
+      index: 1
+      action_type: click
+      desc: 点击支付宝支付
+checkpoints:
+    - element_info: //android.view.View[@content-desc="登录支付宝"]
+      find_type: xpath
+      action_type: get_attribute
+      except_value: 登录支付宝
+      assert_type: equal
+      desc: 验证跳转到支付宝

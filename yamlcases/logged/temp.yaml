@@ -1,0 +1,18 @@
+testinfo:
+    - id: mine_002
+      title:
+      desc: 我的-修改名片
+testcases:
+    - element_info: com.dolphin.insuranceAgent:id/item_currency
+      find_type: id
+      action_type: click
+      desc: 打开我的海豚币
+    - action_type: press_keycode
+      index: 4
+      desc: 键盘回退
+    - element_info: com.dolphin.insuranceAgent:id/ll_news
+      find_type: id
+      action_type: click
+      desc: 点击头条
+    - action_type: swipe_left
+      desc: 左滑动

@@ -1,0 +1,24 @@
+testinfo:
+    - id: mine_002
+      title: 我的海豚币
+      desc: 明细
+testcases:
+    - element_info: com.dolphin.insuranceAgent:id/ll_my
+      find_type: id
+      action_type: click
+      desc: 点击我的
+    - element_info: com.dolphin.insuranceAgent:id/item_currency
+      find_type: id
+      action_type: click
+      desc: 点击进入我的海豚币
+    - element_info: com.dolphin.insuranceAgent:id/action_detail
+      find_type: id
+      action_type: click
+      desc: 点击进入明细
+checkpoints:
+    - element_info: com.dolphin.insuranceAgent:id/detail_name
+      find_type: ids
+      action_type: len_greater
+      except_value: 1
+      assert_type: true
+      desc: 验证明细中内容大于一条

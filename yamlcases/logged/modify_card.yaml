@@ -1,0 +1,72 @@
+testinfo:
+    - id: mine_001
+      title: 修改名片姓名
+      desc: 我的-修改名片
+testcases:
+    - element_info: com.dolphin.insuranceAgent:id/ll_my
+      find_type: id
+      action_type: click
+      desc: 点击我的
+    - element_info: com.dolphin.insuranceAgent:id/rl_business_card
+      find_type: id
+      action_type: click
+      desc: 点开名片修改页面
+    - element_info: com.dolphin.insuranceAgent:id/et_name
+      find_type: id
+      action_type: send_keys
+      msg: cardname
+      desc: 修改姓名
+    - element_info: com.dolphin.insuranceAgent:id/et_phone_number
+      find_type: id
+      action_type: send_keys
+      msg: !!str 15175395142
+      desc: 修改手机号
+    - element_info: com.dolphin.insuranceAgent:id/rl_company
+      find_type: id
+      action_type: click
+      desc: 进入修改公司名称页面
+    - element_info: com.dolphin.insuranceAgent:id/tv_company
+      find_type: ids
+      index: 1
+      action_type: click
+      desc: 选择公司
+    - element_info: com.dolphin.insuranceAgent:id/tv_ensure
+      find_type: id
+      action_type: click
+      desc: 保存公司
+    - element_info: com.dolphin.insuranceAgent:id/rl_job
+      find_type: id
+      action_type: click
+      desc: 进入修改职位页面
+    - element_info: com.dolphin.insuranceAgent:id/tv_company
+      find_type: ids
+      index: 1
+      action_type: click
+      desc: 选择职位
+    - element_info: com.dolphin.insuranceAgent:id/tv_ensure
+      find_type: id
+      action_type: click
+      desc: 保存职位
+    - element_info: com.dolphin.insuranceAgent:id/tv_ensure
+      find_type: id
+      action_type: click
+      desc: 保存编辑页面
+checkpoints:
+    - element_info: com.dolphin.insuranceAgent:id/tv_name
+      find_type: id
+      action_type: get_value
+      except_value: cardname
+      assert_type: equal
+      desc: 验证名片姓名
+    - element_info: com.dolphin.insuranceAgent:id/tv_job
+      find_type: id
+      action_type: get_value
+      except_value: 中国人寿-保险理财顾问
+      assert_type: equal
+      desc: 验证公司、职位名称
+    - element_info: com.dolphin.insuranceAgent:id/tv_phone_number
+      find_type: id
+      action_type: get_value
+      except_value: 151-7539-5142
+      assert_type: equal
+      desc: 验证手机号

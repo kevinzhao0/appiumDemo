@@ -1,0 +1,19 @@
+2018-02-06 17:44:33,197 - baselog.py:34 - meizu_M5 Note - ---------------------start-----------------------------
+2018-02-06 17:44:33,204 - baselog.py:40 - meizu_M5 Note - 点击我的
+2018-02-06 17:45:55,342 - baselog.py:34 - meizu_M5 Note - ---------------------start-----------------------------
+2018-02-06 17:45:55,349 - baselog.py:40 - meizu_M5 Note - 点击我的
+2018-02-06 17:46:01,404 - baselog.py:40 - meizu_M5 Note - 点击进入我的海豚币
+2018-02-06 17:46:02,530 - baselog.py:40 - meizu_M5 Note - 点击第二个购买
+2018-02-06 17:46:03,400 - baselog.py:40 - meizu_M5 Note - 点击支付宝支付
+2018-02-06 17:46:04,476 - baselog.py:40 - meizu_M5 Note - 验证跳转到支付宝
+2018-02-06 17:46:04,476 - baselog.py:40 - meizu_M5 Note - Traceback (most recent call last):
+  File "D:\AppiumProject\MyProject\dealcases\dealcase.py", line 67, in find_element
+    return driver.find_element_by_xpath()
+TypeError: find_element_by_xpath() takes exactly 2 arguments (1 given)
+
+2018-02-06 17:46:04,476 - baselog.py:40 - meizu_M5 Note - Traceback (most recent call last):
+  File "D:\AppiumProject\MyProject\dealcases\dealcase.py", line 122, in check_action
+    return element.getAttribute("name")
+AttributeError: 'NoneType' object has no attribute 'getAttribute'
+
+2018-02-06 17:46:04,476 - baselog.py:37 - meizu_M5 Note - ----------------------end------------------------------

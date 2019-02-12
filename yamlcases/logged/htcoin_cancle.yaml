@@ -1,0 +1,28 @@
+testinfo:
+    - id: mine_005
+      title: 我的海豚币
+      desc: 取消购买
+testcases:
+    - element_info: com.dolphin.insuranceAgent:id/ll_my
+      find_type: id
+      action_type: click
+      desc: 点击我的
+    - element_info: com.dolphin.insuranceAgent:id/item_currency
+      find_type: id
+      action_type: click
+      desc: 点击进入我的海豚币
+    - element_info: com.dolphin.insuranceAgent:id/tv_buy
+      find_type: ids
+      index: 2
+      action_type: click
+      desc: 点击第三个购买
+    - element_info: com.dolphin.insuranceAgent:id/pay_way_cancel
+      find_type: id
+      action_type: click
+      desc: 点击取消
+checkpoints:
+    - element_info: com.dolphin.insuranceAgent:id/ll_my
+      find_type: id
+      action_type: selected
+      assert_type: true
+      desc: 验证手机号
